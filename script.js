@@ -1,14 +1,16 @@
-// window.alert('取得に成功')
+window.addEventListener('load', function() {
 
-// document.getElementById('')
+    const pullDownButton = document.getElementById("lists");
 
-// function getElement(){
-//     elements = document.querySelectorAll('.shop li');
-//     let len = elements.length;
-//     for (let i = 0; i < len; i++){
-//         console.log(elements.item(i).textContent);
-//     }
-// }
-
-let lists = document.getElementsByClassName('pull-down-list')
-console.log(lists)
+    pullDownButton.addEventListener('mouseover', () => {
+        console.log('乗った');
+    });
+    　
+    pullDownButton.addEventListener('mouseout', () => {
+        console.log('離れた');
+    });
+    
+    pullDownButton.addEventListener('click', () => {
+        console.log('クリック');
+    });
+});
